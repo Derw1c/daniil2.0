@@ -1,0 +1,26 @@
+1)import random
+number = random.randint(10,99)
+digit1 = number // 10
+digit2 = number % 10
+new_number = digit2 * 10 + digit1
+print("Исходное число:",number)
+print("Новое число:",new_number)
+
+
+3)number = 22
+tens = number // 10
+ones = number % 10
+print("Число десятков:",tens)
+print("Число единиц:",ones)
+
+
+4)centimeters = 150
+decimeters = 15 
+millimeters = 1500
+meters_from_cm = centimeters / 100 
+meters_from_dm = decimeters / 10 
+meters_from_mm = millimeters / 1000
+print("Количество метров из",centimeters,"сантиметров:",meters_from_cm)
+print("Количество метров из",decimeters,"дециметров:",meters_from_dm)
+print("Количество метров из",millimeters,"миллиметров:",meters_from_mm)
+
