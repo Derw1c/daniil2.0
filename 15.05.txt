@@ -1,0 +1,22 @@
+№ 1
+
+def calculate(a, b, c):
+    result = (a * b) + c
+    return result
+
+№ 2
+
+def square(x):
+    return x ** 2
+
+def main():
+    number1 = 5
+    number2 = 7
+    square1 = square(number1)
+    square2 = square(number2)
+    print(f"Квадрат числа {number1} равен {square1}")
+    print(f"Квадрат числа {number2} равен {square2}")
+    print("Программа завершена")
+
+if __name__ == "__main__":
+    main()
