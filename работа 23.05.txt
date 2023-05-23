@@ -1,0 +1,37 @@
+def ask_riddle(riddle, answer):
+    attempts = 5
+    while attempts > 0:
+        user_answer = input(riddle)
+        if user_answer.lower() == answer.lower():
+            print("Правильно!")
+            return True
+        else:
+            attempts -= 1
+            if attempts > 0:
+                print("Неправильно. Попробуй еще раз. У тебя осталось", attempts, "попыток.")
+            else:
+                print("Неправильно. Правильный ответ:", answer)
+    return False
+
+riddle1 = "Зимой и летом одним цветом "
+answer1 = "елка"
+
+riddle2 = "Не птица, а летает. Не зверь, а бегает "
+answer2 = "бабочка"
+
+riddle3 = "Железный, а не каменный, летит, но не птица "
+answer3 = "самолет"
+
+if not ask_riddle(riddle1, answer1):
+    print("Игра окончена!")
+    exit()
+
+if not ask_riddle(riddle2, answer2):
+    print("Игра окончена!")
+    exit()
+
+if not ask_riddle(riddle3, answer3):
+    print("Игра окончена!")
+    exit()
+
+print("Поздравляю, ты прошел все загадки!")
