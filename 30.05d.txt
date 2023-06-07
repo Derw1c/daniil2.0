@@ -1,0 +1,10 @@
+x = input()
+y = input()
+z = input()
+def ded(x):    
+    n = x * 5
+    print(n)
+
+ded(x)
+ded(y)
+ded(n)
