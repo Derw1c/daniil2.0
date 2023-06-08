@@ -1,0 +1,26 @@
+def xor_cipher(string, key):
+    result = ''
+    for i in range(len(string)):
+        code = ord(string[i]) ^ ord(key[i % len(key)])
+        result += chr(code)
+    return result
+
+def xor_decipher(string, key):
+    result = ''
+    for i in range(len(string)):
+        code = ord(string[i]) ^ ord(key[i % len(key)])
+        result += chr(code)
+    return result
+
+
+input_string = input("Введите строку для шифрования: ")
+encryption_key = input("Введите ключ шифрования: ")
+
+
+encrypted_string = xor_cipher(input_string, encryption_key)
+print("Зашифрованная строка:", encrypted_string)
+
+
+decryption_key = input("Введите ключ для расшифровки: ")
+decrypted_string = xor_decipher(encrypted_string, decryption_key)
+print("Расшифрованная строка:", decrypted_string)
