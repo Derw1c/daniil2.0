@@ -1,0 +1,55 @@
+№ 6
+def вывод_чисел(N):
+    число = 1
+    while число < N:
+        print(число)
+        число += 1
+
+N = int(input("Введите натуральное число N: "))
+вывод_чисел(N)
+
+№ 8
+def find_square(n):
+    i = 1
+    while i * i <= n:
+        i += 1
+    return i
+n = int(input("Введите число n: "))
+result = find_square(n)
+print("Первое натуральное число, квадрат которого больше", n, ":", result)
+
+№ 9
+def find_number():
+    number = 200
+    while True:
+        number += 1
+        if number % 17 == 0:
+            return number
+
+result = find_number()
+print("Минимальное число больше 200, которое делится нацело на 17:", result)
+
+№ 10
+def find_max_number():
+    max_number = 0
+    for number in range(1, 601):
+        if number % 28 == 0:
+            max_number = number
+    return max_number
+
+result = find_max_number()
+print("Максимальное число, не превышающее 600 и делящееся нацело на 28:", result)
+
+№ 11
+def find_day():
+    distance = 10  
+    day = 1  
+    while distance <= 20:
+        distance += distance * 0.1  # Увеличение пробега на 10% от предыдущего дня
+        day += 1
+
+    return day
+
+result = find_day()
+print("Лыжник пробежит более 20 км в", result, "-й день")
+
