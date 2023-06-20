@@ -1,0 +1,20 @@
+def even_or_odd(number):
+    return "Even" if number % 2 == 0 else "Odd"
+
+
+def positive_sum(arr):
+    return sum([x for x in arr if x > 0])
+
+
+def make_negative( number ):
+    return (-1) * abs(number)
+
+
+def opposite(number):
+    return(-1) * number
+
+
+def solution(string):
+    return string[: : -1]
+
+
